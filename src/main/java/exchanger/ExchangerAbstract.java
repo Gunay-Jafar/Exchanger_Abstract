@@ -43,11 +43,9 @@ public abstract class ExchangerAbstract {
                         System.out.println("yanlis daxil etdiniz");
                 }
             }
-
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-
     }
 
 }

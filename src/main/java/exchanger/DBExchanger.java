@@ -85,7 +85,6 @@ public class DBExchanger extends ExchangerAbstract {
             ses.getTransaction().rollback();
             System.out.println("xeta bas verdi");
         }
-
     }
 
     @Override
@@ -103,86 +102,60 @@ public class DBExchanger extends ExchangerAbstract {
     }
 
     @Override
-    boolean downloadData() throws Exception {
-        return false;
+    boolean downloadData(){
+        String userDate = GeneralUtils.askInputFromUser("Tarix daxil et:");
+        boolean isDateValid = GeneralUtils.isDateValid(userDate);
+        if (!isDateValid)
+            return false;
+
+        if (notExist(userDate)) {
+            getCurrencyDataWithDateAndSave(userDate);
+            return false;
+        } else {
+            System.out.println(userDate + " məlumatları mövcuddur");
+        }
+        return true;
     }
 
     @Override
-    boolean enterExchangeInfo() throws Exception {
-        return false;
-    }
+    boolean enterExchangeInfo(){
+        Scanner scanner=new Scanner(System.in);
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
+        String dateCur = formatter.format(date);
+        System.out.println(dateCur + " " + "gunluk tarixinin valyutasina baxmaq ucun 1 daxil edin,Tarix daxil etmek isdeyirsizse 2 daxil edin");
+        if (scanner.nextLine().equals("2")) {
 
-    @Override
-    public void run() {
-        Scanner scanner = new Scanner(System.in);
-        try {
-            while (true) {
-                if (GeneralUtils.askInputFromUser("Devam etmek ucun enter daxil et. Cixmaq ucun -1 daxil et").equals("-1")) {
-                    ses.close();
-                    HibernateUtil.shutdon();
-                    return;
-                }
+            String userDate = GeneralUtils.askInputFromUser("Tarix daxil et:");
+            boolean isDateValid = GeneralUtils.isDateValid(userDate);
+            if (!isDateValid)
+                return false;
 
-                System.out.println("****MENU****");
-                System.out.println("1.Fayli Endir");
-                System.out.println("2.Mezennenin daxil edilmesi");
+            if (notExist(userDate)) {
+                getCurrencyDataWithDateAndSave(userDate);
 
-                if (scanner.nextLine().equals("1")) {
-                    String userDate = GeneralUtils.askInputFromUser("Tarix daxil et:");
-                    boolean isDateValid = GeneralUtils.isDateValid(userDate);
-                    if (!isDateValid)
-                        continue;
-
-                    if (notExist(userDate)) {
-                        getCurrencyDataWithDateAndSave(userDate);
-                        continue;
-                    } else {
-                        System.out.println(userDate + " məlumatları mövcuddur");
-                    }
-
-                } else {
-                    Date date = new Date();
-                    SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
-                    String dateCur = formatter.format(date);
-                    System.out.println(dateCur + " " + "gunluk tarixinin valyutasina baxmaq ucun 1 daxil edin,Tarix daxil etmek isdeyirsizse 2 daxil edin");
-                    if (scanner.nextLine().equals("2")) {
-
-                        String userDate = GeneralUtils.askInputFromUser("Tarix daxil et:");
-                        boolean isDateValid = GeneralUtils.isDateValid(userDate);
-                        if (!isDateValid)
-                            continue;
-
-                        if (notExist(userDate)) {
-                            getCurrencyDataWithDateAndSave(userDate);
-
-                        } else {
-                            System.out.println(userDate + " məlumatları mövcuddur");
-                        }
-
-                        String mezenne = GeneralUtils.askInputFromUser("Mezenneni daxil edin:").toUpperCase();
-                        String amount = GeneralUtils.askInputFromUser("AZN Mebleg daxil edin:");
-
-                        if (!GeneralUtils.isAmountValid(amount)) {
-                            System.out.println("Yanlis mebleg daxil etdiniz!");
-                            continue;
-                        }
-                        readAndCalculateExchangeValue(amount, userDate, mezenne);
-
-                    } else {
-                        String mezenne = GeneralUtils.askInputFromUser("Mezenneni daxil edin:").toUpperCase();
-                        String amount = GeneralUtils.askInputFromUser("AZN Mebleg daxil edin:");
-
-                        if (!GeneralUtils.isAmountValid(amount)) {
-                            System.out.println("Yanlis mebleg daxil etdiniz!");
-                            continue;
-                        }
-                        readAndCalculateExchangeValue(amount, dateCur, mezenne);
-                    }
-                }
+            } else {
+                System.out.println(userDate + " məlumatları mövcuddur");
             }
 
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+            String mezenne = GeneralUtils.askInputFromUser("Mezenneni daxil edin:").toUpperCase();
+            String amount = GeneralUtils.askInputFromUser("AZN Mebleg daxil edin:");
+
+            if (!GeneralUtils.isAmountValid(amount)) {
+                return false;
+            }
+            readAndCalculateExchangeValue(amount, userDate, mezenne);
+
+        } else {
+            String mezenne = GeneralUtils.askInputFromUser("Mezenneni daxil edin:").toUpperCase();
+            String amount = GeneralUtils.askInputFromUser("AZN Mebleg daxil edin:");
+
+            if (!GeneralUtils.isAmountValid(amount)) {
+                System.out.println("Yanlis mebleg daxil etdiniz!");
+                return false;
+            }
+            readAndCalculateExchangeValue(amount, dateCur, mezenne);
         }
+        return true;
     }
 }
