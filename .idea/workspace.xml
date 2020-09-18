@@ -6,14 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c81bce9-d9b5-420d-9961-73939189349c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exchanger/DBExchanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exchanger/DBExchanger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exchanger/ExchangerAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exchanger/ExchangerAbstract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exchanger/ExchangerAbstract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exchanger/ExchangerAbstract.class" afterDir="false" />
-    </list>
+    <list default="true" id="8c81bce9-d9b5-420d-9961-73939189349c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,12 +101,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1761" />
+          <entry key="java" value="1784" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1761" />
+          <entry key="JAVA" value="1784" />
         </counts>
       </usages-collector>
     </session>
@@ -167,11 +160,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-93">
-              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+            <state relative-caret-position="65">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,11 +172,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="177">
+              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
               <folding>
                 <element signature="e#179#180#0" expanded="true" />
                 <element signature="e#207#208#0" expanded="true" />
@@ -249,10 +242,10 @@
         <option value="$PROJECT_DIR$/src/main/java/TotalAbs.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/GeneralUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/exchanger/ExchangerAbstract.java" />
         <option value="$PROJECT_DIR$/src/main/java/exchanger/DBExchanger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java" />
       </list>
     </option>
   </component>
@@ -463,18 +456,18 @@
       <workItem from="1600346443891" duration="3857000" />
       <workItem from="1600409325440" duration="8238000" />
       <workItem from="1600420584944" duration="2866000" />
-      <workItem from="1600423552068" duration="1482000" />
+      <workItem from="1600423552068" duration="1750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51926000" />
+    <option name="totallyTimeSpent" value="52194000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992908" visible="true" weight="0.20939597" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992908" visible="true" weight="0.20939597" />
       <window_info id="Structure" order="1" sideWeight="0.50070924" side_tool="true" weight="0.24966443" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -630,17 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="e#179#180#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/ExchangerAbstract.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -663,10 +645,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        <state relative-caret-position="65">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding>
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
           </folding>
         </state>
       </provider>
