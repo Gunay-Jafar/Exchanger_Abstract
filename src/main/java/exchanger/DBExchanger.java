@@ -78,7 +78,7 @@ public class DBExchanger extends ExchangerAbstract {
                 }
             }
             ses.getTransaction().commit();
-            System.out.println(date + "ugurla bazaya yazildi!");
+            System.out.println(date + " ugurla bazaya yazildi!");
 
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -101,25 +101,11 @@ public class DBExchanger extends ExchangerAbstract {
         }
     }
 
-    @Override
-    boolean downloadData(){
-        String userDate = GeneralUtils.askInputFromUser("Tarix daxil et:");
-        boolean isDateValid = GeneralUtils.isDateValid(userDate);
-        if (!isDateValid)
-            return false;
 
-        if (notExist(userDate)) {
-            getCurrencyDataWithDateAndSave(userDate);
-            return false;
-        } else {
-            System.out.println(userDate + " məlumatları mövcuddur");
-        }
-        return true;
-    }
 
     @Override
-    boolean enterExchangeInfo(){
-        Scanner scanner=new Scanner(System.in);
+    boolean enterExchangeInfo() {
+        Scanner scanner = new Scanner(System.in);
         Date date = new Date();
         SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
         String dateCur = formatter.format(date);
@@ -147,6 +133,10 @@ public class DBExchanger extends ExchangerAbstract {
             readAndCalculateExchangeValue(amount, userDate, mezenne);
 
         } else {
+            if (notExist(dateCur)) {
+                System.out.println("Gunluk mezenne melumatlari sistemde olmadigi ucun endirildi!");
+                getCurrencyDataWithDateAndSave(dateCur);
+            }
             String mezenne = GeneralUtils.askInputFromUser("Mezenneni daxil edin:").toUpperCase();
             String amount = GeneralUtils.askInputFromUser("AZN Mebleg daxil edin:");
 

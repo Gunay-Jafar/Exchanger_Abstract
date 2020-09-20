@@ -12,7 +12,20 @@ public abstract class ExchangerAbstract {
 
     abstract boolean notExist(String date);
 
-    abstract boolean downloadData() throws Exception;
+    boolean downloadData() throws Exception {
+        String userDate = GeneralUtils.askInputFromUser("Tarix daxil et:");
+        boolean isDateValid = GeneralUtils.isDateValid(userDate);
+        if (!isDateValid)
+            return false;
+
+        if (notExist(userDate)) {
+            getCurrencyDataWithDateAndSave(userDate);
+            return false;
+        } else {
+            System.out.println(userDate + " məlumatları mövcuddur");
+        }
+        return true;
+    }
 
     abstract boolean enterExchangeInfo() throws Exception;
 
@@ -20,7 +33,8 @@ public abstract class ExchangerAbstract {
         Scanner scanner = new Scanner(System.in);
         try {
             while (true) {
-                if (GeneralUtils.askInputFromUser("Devam etmek ucun enter daxil et. Cixmaq ucun -1 daxil et").equals("-1"))
+                String input = GeneralUtils.askInputFromUser("Devam etmek ucun enter daxil et. Cixmaq ucun -1 daxil et");
+                if (input.equals("-1"))
                     return;
 
                 System.out.println("****MENU****");
@@ -40,7 +54,7 @@ public abstract class ExchangerAbstract {
                             continue;
                         break;
                     default:
-                        System.out.println("yanlis daxil etdiniz");
+                        System.out.println("Yanlis daxil etdiniz");
                 }
             }
         } catch (Exception e) {

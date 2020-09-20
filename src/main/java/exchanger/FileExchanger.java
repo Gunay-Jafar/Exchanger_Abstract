@@ -82,15 +82,7 @@ public class FileExchanger extends ExchangerAbstract {
         return file.exists();
     }
 
-    public boolean downloadData() throws Exception {
-        String userDate = GeneralUtils.askInputFromUser("Tarix daxil et:");
-        boolean isDateValid = GeneralUtils.isDateValid(userDate);
-        if (!isDateValid)
-            return false;
 
-        getCurrencyDataWithDateAndSave(userDate);
-        return true;
-    }
 
     public boolean enterExchangeInfo() throws Exception {
         Scanner scanner = new Scanner(System.in);
@@ -124,6 +116,10 @@ public class FileExchanger extends ExchangerAbstract {
             readAndCalculateExchangeValue(amount, userDate, mezenne);
 
         } else {
+            if (!notExist(dateCur)) {
+                System.out.println("Gunluk mezenne melumatlari sistemde olmadigi ucun endirildi!");
+                getCurrencyDataWithDateAndSave(dateCur);
+            }
             String mezenne = GeneralUtils.askInputFromUser("Mezenneni daxil edin:").toUpperCase();
             String amount = GeneralUtils.askInputFromUser("AZN Mebleg daxil edin:");
 

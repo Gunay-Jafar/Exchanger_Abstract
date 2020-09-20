@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="H2">
+  <database-model serializer="dbm" rdbms="H2" format-version="4.11">
+    <root id="1">
+      <ServerVersion>1.4.200</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="TEST">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="INFORMATION_SCHEMA"/>
+    <schema id="4" parent="2" name="PUBLIC">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="5" parent="4" name="CBAR_CONTENT"/>
+    <table id="6" parent="4" name="CBAR_DATE"/>
+    <column id="7" parent="5" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>NEXT VALUE FOR &quot;PUBLIC&quot;.&quot;SYSTEM_SEQUENCE_83E319CD_981A_4195_849E_D2B584432AA5&quot;</DefaultExpression>
+    </column>
+    <column id="8" parent="5" name="CODE">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="9" parent="5" name="NAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="10" parent="5" name="NOMINAL">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="11" parent="5" name="VALUE">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="12" parent="5" name="FK_CBAR_DATE">
+      <Position>6</Position>
+      <DataType>INTEGER(10)|4s</DataType>
+    </column>
+    <index id="13" parent="5" name="PRIMARY_KEY_D">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="14" parent="5" name="FKLBIJM6GT4DMDKOAVGXI7FP57N_INDEX_D">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>FK_CBAR_DATE</ColNames>
+    </index>
+    <key id="15" parent="5" name="CONSTRAINT_D">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="16" parent="5" name="FKLBIJM6GT4DMDKOAVGXI7FP57N">
+      <ColNames>FK_CBAR_DATE</ColNames>
+      <RefSchemaName>PUBLIC</RefSchemaName>
+      <RefTableName>CBAR_DATE</RefTableName>
+      <RefKeyName>CONSTRAINT_9</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <column id="17" parent="6" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>NEXT VALUE FOR &quot;PUBLIC&quot;.&quot;SYSTEM_SEQUENCE_EAEF51A6_0D92_4E6C_823F_30F6F5F9AA8F&quot;</DefaultExpression>
+    </column>
+    <column id="18" parent="6" name="DATE">
+      <Position>2</Position>
+      <DataType>DATE(10)|91s</DataType>
+    </column>
+    <index id="19" parent="6" name="PRIMARY_KEY_9">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="20" parent="6" name="UK_6WY0NVRNXYMBII138V6RF9WVK_INDEX_9">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>DATE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="21" parent="6" name="CONSTRAINT_9">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="22" parent="6" name="UK_6WY0NVRNXYMBII138V6RF9WVK_INDEX_9">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>DATE</ColNames>
+    </key>
+  </database-model>
+</dataSource>
