@@ -18,10 +18,13 @@ import java.math.RoundingMode;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class RunTimeExchanger extends ExchangerAbstract {
 
@@ -29,10 +32,6 @@ public class RunTimeExchanger extends ExchangerAbstract {
 
     @Override
     boolean readAndCalculateExchangeValue(String amount, String date, String mezenne) {
-        if (!notExist(date)){
-            System.out.println(date+" tarixde melumat movcuddur!");
-            return false;
-        }
         BigDecimal amountCast = new BigDecimal(amount);
         String m=currencyContent.get(date).get(mezenne).getValue();
         BigDecimal currency = new BigDecimal(m);
@@ -73,8 +72,6 @@ public class RunTimeExchanger extends ExchangerAbstract {
         }
         currencyContent.put(date, cbarContentItem);
 
-
-
     }
 
     @Override
@@ -85,7 +82,49 @@ public class RunTimeExchanger extends ExchangerAbstract {
 
     @Override
     boolean enterExchangeInfo() throws Exception {
-        return false;
+        Scanner scanner = new Scanner(System.in);
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
+        String dateCur = formatter.format(date);
+        System.out.println(dateCur + " " + "gunluk tarixinin valyutasina baxmaq ucun 1 daxil edin,Tarix daxil etmek isdeyirsizse 2 daxil edin");
+        if (scanner.nextLine().equals("2")) {
+            String userDate = GeneralUtils.askInputFromUser("Tarix daxil et:");
+            boolean isDateValid = GeneralUtils.isDateValid(userDate);
+            if (!isDateValid)
+                return false;
+
+            if (notExist(userDate)) {
+                String input = GeneralUtils.askInputFromUser("Fayl tapilmadi. Yükləyib davam etmək üçün 1, çıxış etmək üçün 2 daxil edin.");
+                if (input.equals("1")) {
+                    getCurrencyDataWithDateAndSave(userDate);
+
+                } else if (input.equals("2")) {
+                    return false;
+                }
+            }
+
+            String mezenne = GeneralUtils.askInputFromUser("Mezenneni daxil edin:").toUpperCase();
+            String amount = GeneralUtils.askInputFromUser("AZN Mebleg daxil edin:");
+
+            if (!GeneralUtils.isAmountValid(amount)) {
+                return false;
+            }
+            readAndCalculateExchangeValue(amount, userDate, mezenne);
+
+        } else {
+            if (notExist(dateCur)) {
+                System.out.println("Gunluk mezenne melumatlari sistemde olmadigi ucun endirildi!");
+                getCurrencyDataWithDateAndSave(dateCur);
+            }
+            String mezenne = GeneralUtils.askInputFromUser("Mezenneni daxil edin:").toUpperCase();
+            String amount = GeneralUtils.askInputFromUser("AZN Mebleg daxil edin:");
+
+            if (!GeneralUtils.isAmountValid(amount)) {
+                return false;
+            }
+            readAndCalculateExchangeValue(amount, dateCur, mezenne);
+        }
+        return true;
     }
 
 
