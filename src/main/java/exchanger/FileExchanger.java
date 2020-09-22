@@ -5,7 +5,6 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import util.GeneralUtils;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.*;
@@ -72,7 +71,7 @@ public class FileExchanger extends ExchangerAbstract {
             writer.close();
             System.out.println("Fayl ugurla endirildi!");
         } else {
-            System.out.println("Ugursuz emeliyyat,Fayl endirilmedi!");
+            System.out.println("Ugursuz emeliyyat,Movcud oldugu ucun endirilmedi!");
         }
     }
 

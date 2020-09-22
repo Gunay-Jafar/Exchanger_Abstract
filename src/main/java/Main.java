@@ -1,4 +1,5 @@
 import exchanger.DBExchanger;
+import exchanger.ExchangerAbstract;
 import exchanger.FileExchanger;
 import exchanger.RunTimeExchanger;
 
@@ -10,20 +11,21 @@ public class Main {
         System.out.println("1-File ,2-DataBase ,3-RunTime");
         switch (scanner.nextLine()) {
             case "1":
-                FileExchanger fileExchanger = new FileExchanger();
-                fileExchanger.run();
+                runProgram(new FileExchanger());
                 break;
             case "2":
-                DBExchanger dbExchanger = new DBExchanger();
-                dbExchanger.run();
+                runProgram(new DBExchanger());
                 break;
             case "3":
-                RunTimeExchanger runTimeExchanger = new RunTimeExchanger();
-                runTimeExchanger.run();
+                runProgram(new RunTimeExchanger());
                 break;
             default:
                 System.out.println("Sehv daxil etdiniz!");
         }
 
+    }
+
+    public static void runProgram(ExchangerAbstract exchanger){
+        exchanger.run();
     }
 }

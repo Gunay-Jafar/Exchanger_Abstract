@@ -1,6 +1,5 @@
 package exchanger;
 
-
 import entity.Cbar_content;
 import entity.Cbar_date;
 import org.w3c.dom.Document;
@@ -8,22 +7,16 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import util.GeneralUtils;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class RunTimeExchanger extends ExchangerAbstract {
