@@ -27,6 +27,20 @@ public abstract class ExchangerAbstract {
         return true;
     }
 
+    public boolean downloadDataForService(String date) throws Exception {
+        boolean isDateValid = GeneralUtils.isDateValid(date);
+        if (!isDateValid)
+            return false;
+
+        if (notExist(date)) {
+            getCurrencyDataWithDateAndSave(date);
+            return false;
+        } else {
+            System.out.println(date + " məlumatları mövcuddur");
+        }
+        return true;
+    }
+
     abstract boolean enterExchangeInfo() throws Exception;
 
     public void run() {
