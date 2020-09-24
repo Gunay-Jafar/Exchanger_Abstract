@@ -1,18 +1,11 @@
 package exchanger;
 
 import org.dom4j.Document;
+import org.dom4j.Element;
+import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import java.io.*;
-import org.dom4j.Document;
-import org.dom4j.DocumentException;
-import org.dom4j.io.SAXReader;
-import java.util.*;
-import org.dom4j.*;
 import util.GeneralUtils;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
+
 import java.io.*;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -37,23 +30,33 @@ public class FileExchanger extends ExchangerAbstract {
 //        doc.getDocumentElement().normalize();
 //        NodeList nodes = doc.getElementsByTagName("Valute");
 
-        List<org.dom4j.Node> nodes = document.selectNodes("/Valute" );
+        List<Node> nodes = document.selectNodes("/ValCurs/ValType/Valute");
+//        document.getRootElement().element("ValType");
 
         boolean isFound = false;
         BigDecimal result = null;
 
-        for (int i = 0; i < nodes.size(); i++) {
-            Node tempNode = (Node) nodes.get(i);
-            if (tempNode.getNodeType() == Node.ELEMENT_NODE) {
-                Element eElement = (Element) tempNode;
-                if (mezenne.equals(eElement.getAttribute("Code"))) {
-                    BigDecimal currency = new BigDecimal(eElement.getElementsByTagName("Value").item(0).getTextContent());
-                    result = amountCast.divide(currency, 3, RoundingMode.HALF_UP);
-                    System.out.println(result.toString());
-                    isFound = true;
-                }
+        for (Node node : nodes) {
+            if (mezenne.equals(node.valueOf("@Code"))) {
+                BigDecimal currency = new BigDecimal(node.selectSingleNode("Value").getText());
+                result = amountCast.divide(currency, 3, RoundingMode.HALF_UP);
+                System.out.println(result.toString());
+                isFound = true;
             }
         }
+
+//        for (int i = 0; i < nodes.size(); i++) {
+//            Node tempNode =nodes.get(i);
+//            if (tempNode.getNodeType() == Node.ELEMENT_NODE) {
+//                Element eElement = (Element) tempNode;
+//                if (mezenne.equals(eElement.getAttribute("Code"))) {
+//                    BigDecimal currency = new BigDecimal(eElement.getElementsByTagName("Value").item(0).getTextContent());
+//                    result = amountCast.divide(currency, 3, RoundingMode.HALF_UP);
+//                    System.out.println(result.toString());
+//                    isFound = true;
+//                }
+//            }
+//        }
         if (!isFound) {
             return "Sehv mezenne daxil etdiniz!";
         }
@@ -92,7 +95,6 @@ public class FileExchanger extends ExchangerAbstract {
         File file = new File(System.getProperty("user.dir") + "/res/" + date + ".xml");
         return file.exists();
     }
-
 
 
     public boolean enterExchangeInfo() throws Exception {

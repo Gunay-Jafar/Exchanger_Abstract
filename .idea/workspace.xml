@@ -9,39 +9,13 @@
     <list default="true" id="8c81bce9-d9b5-420d-9961-73939189349c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/01.01.2020.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/02.09.2020.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/07.01.2020.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/12.01.2020.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/19.09.2020.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/20.09.2020.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/21.09.2020.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/23.09.2020.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CurrencyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CurrencyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exchanger/DBExchanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exchanger/DBExchanger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exchanger/ExchangerAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exchanger/ExchangerAbstract.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/CurrentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CurrencyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CurrencyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CurrencyProject.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/CurrencyProject.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/config/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/config/ApplicationConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/controller/CurrencyController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/exchanger/DBExchanger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/exchanger/DBExchanger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/exchanger/ExchangerAbstract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/exchanger/ExchangerAbstract.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/exchanger/FileExchanger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/exchanger/FileExchanger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/exchanger/RunTimeExchanger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/exchanger/RunTimeExchanger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/service/CurrentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/ApplicationConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/CurrencyController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exchanger/DBExchanger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exchanger/DBExchanger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exchanger/ExchangerAbstract.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exchanger/ExchangerAbstract.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/service/CurrencyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/service/CurrencyService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/exchanger/FileExchanger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exchanger/FileExchanger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exchanger/RunTimeExchanger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exchanger/RunTimeExchanger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/CurrentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/CurrencyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/CurrencyService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -141,7 +115,7 @@
           <entry key="CBAR_DATE" value="2" />
           <entry key="class" value="8" />
           <entry key="iml" value="2" />
-          <entry key="java" value="51" />
+          <entry key="java" value="52" />
           <entry key="name" value="1" />
           <entry key="xml" value="8" />
         </counts>
@@ -151,7 +125,7 @@
           <entry key="CLASS" value="8" />
           <entry key="Database Element" value="3" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="51" />
+          <entry key="JAVA" value="52" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="8" />
         </counts>
@@ -159,15 +133,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="7" />
-          <entry key="java" value="3790" />
-          <entry key="xml" value="46" />
+          <entry key="java" value="3938" />
+          <entry key="xml" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3790" />
+          <entry key="JAVA" value="3938" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="XML" value="46" />
+          <entry key="XML" value="48" />
         </counts>
       </usages-collector>
     </session>
@@ -177,8 +151,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
+            <state relative-caret-position="62">
+              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
             </state>
           </provider>
         </entry>
@@ -186,8 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/CurrencyService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="-183">
+              <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -196,19 +170,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.25/jersey-server-2.25-sources.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/ExchangerAbstract.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="257">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/ExchangerAbstract.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            <state relative-caret-position="79">
+              <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -217,42 +194,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="39" column="60" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/org/dom4j/DocumentFactory.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="221" selection-start-line="221" selection-end-line="221" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://C:/Program Files/Apache Software Foundation/Tomcat 9.0/bin/res/01.01.2020.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-13.0.1/lib/src.zip!/java.xml/javax/xml/parsers/DocumentBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-40">
-              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+            <state relative-caret-position="140">
+              <caret line="7" column="36" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="7" selection-end-column="36" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#ValType#1;n#ValCurs#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -261,10 +208,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="323">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2833#2834#0" expanded="true" />
                 <element signature="e#2892#2893#0" expanded="true" />
               </folding>
             </state>
@@ -308,11 +256,11 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/CurrencyController.java" />
         <option value="$PROJECT_DIR$/src/main/java/config/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/exchanger/DBExchanger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/CurrencyService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="C:/Program Files/Apache Software Foundation/Tomcat 9.0/bin/res/01.01.2020.xml" />
         <option value="$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java" />
         <option value="$PROJECT_DIR$/src/main/java/exchanger/ExchangerAbstract.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/CurrencyService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java" />
       </list>
     </option>
@@ -353,7 +301,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1750" />
@@ -471,7 +419,7 @@
     <property name="DatabaseDriversLRU" value="h2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600945270124" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600952881154" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/RestApi" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -504,7 +452,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="XML" />
@@ -644,12 +592,12 @@
       <workItem from="1600775633126" duration="5698000" />
       <workItem from="1600796405794" duration="764000" />
       <workItem from="1600844002901" duration="18518000" />
-      <workItem from="1600928989452" duration="14005000" />
+      <workItem from="1600928989452" duration="20124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106583000" />
+    <option name="totallyTimeSpent" value="112702000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -746,42 +694,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java</url>
-          <line>27</line>
+          <url>file://$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java</url>
+          <line>33</line>
           <properties />
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java</url>
-          <line>65</line>
+          <url>file://$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java</url>
+          <line>32</line>
           <properties />
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/service/CurrencyService.java</url>
-          <line>27</line>
+          <url>file://$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java</url>
+          <line>22</line>
           <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java</url>
-          <line>71</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java</url>
-          <line>70</line>
-          <properties class="exchanger.RunTimeExchanger" method="notExist">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -801,6 +729,13 @@
     <expressions id="watch">
       <expression>
         <expression-string>request.getMediaType()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="setValue">
+      <expression>
+        <expression-string>&quot;10&quot;</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1009,29 +944,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.25/jersey-server-2.25-sources.jar!/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="148" selection-start-line="148" selection-end-line="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1041,34 +957,6 @@
           <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.25/jersey-server-2.25-sources.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/CurrencyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2892#2893#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1087,20 +975,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/ExchangerAbstract.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        <state relative-caret-position="560">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Apache Software Foundation/Tomcat 9.0/bin/res/01.01.2020.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1111,12 +993,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.25/jersey-server-2.25-sources.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="39" column="60" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+        <state relative-caret-position="147">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/RunTimeExchanger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2833#2834#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/ExchangerAbstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/CurrencyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Apache Software Foundation/Tomcat 9.0/bin/res/01.01.2020.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="n#ValType#1;n#ValCurs#0;n#!!top" />
           </folding>
         </state>
       </provider>

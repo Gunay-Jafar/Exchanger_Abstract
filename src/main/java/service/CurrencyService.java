@@ -30,7 +30,7 @@ public class CurrencyService {
             default:
                 return "Sehv daxil etdiniz!";
         }
-        return "OK";
+        return "Fayl ugurla Endirildi";
     }
 
     public static void runProgram(ExchangerAbstract exchanger, String date) throws Exception {
