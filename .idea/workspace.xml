@@ -6,17 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c81bce9-d9b5-420d-9961-73939189349c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/CurrencyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CurrencyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CurrencyProject.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/CurrencyProject.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/exchanger/FileExchanger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/exchanger/FileExchanger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/service/CurrencyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CurrencyProject/WEB-INF/classes/service/CurrencyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exchanger/FileExchanger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exchanger/FileExchanger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/CurrencyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/CurrencyService.class" afterDir="false" />
-    </list>
+    <list default="true" id="8c81bce9-d9b5-420d-9961-73939189349c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +86,7 @@
     <session id="695178267">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -160,7 +150,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/CurrencyService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-183">
+            <state relative-caret-position="-123">
               <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -181,11 +171,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+            <state relative-caret-position="221">
+              <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -193,7 +183,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://C:/Program Files/Apache Software Foundation/Tomcat 9.0/bin/res/01.01.2020.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
@@ -419,7 +409,7 @@
     <property name="DatabaseDriversLRU" value="h2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600952881154" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600953057206" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/RestApi" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -592,12 +582,12 @@
       <workItem from="1600775633126" duration="5698000" />
       <workItem from="1600796405794" duration="764000" />
       <workItem from="1600844002901" duration="18518000" />
-      <workItem from="1600928989452" duration="20124000" />
+      <workItem from="1600928989452" duration="20502000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112702000" />
+    <option name="totallyTimeSpent" value="113080000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -691,28 +681,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
         <watch expression="request.getMediaType()" language="JAVA" />
@@ -1022,30 +990,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/CurrencyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183">
-          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
           <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1055,6 +1003,26 @@
           <caret line="7" column="36" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="7" selection-end-column="36" />
           <folding>
             <element signature="n#ValType#1;n#ValCurs#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/CurrencyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-123">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exchanger/FileExchanger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

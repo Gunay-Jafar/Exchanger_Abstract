@@ -31,7 +31,6 @@ public class FileExchanger extends ExchangerAbstract {
 //        NodeList nodes = doc.getElementsByTagName("Valute");
 
         List<Node> nodes = document.selectNodes("/ValCurs/ValType/Valute");
-//        document.getRootElement().element("ValType");
 
         boolean isFound = false;
         BigDecimal result = null;
