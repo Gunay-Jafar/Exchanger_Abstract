@@ -1,9 +1,15 @@
 package exchanger;
 
-import org.w3c.dom.Document;
+import org.dom4j.Document;
+import org.dom4j.io.SAXReader;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+import java.io.*;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.io.SAXReader;
+import java.util.*;
+import org.dom4j.*;
 import util.GeneralUtils;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -14,38 +20,44 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 public class FileExchanger extends ExchangerAbstract {
 
     @Override
-    boolean readAndCalculateExchangeValue(String amount, String date, String mezenne) throws Exception {
+    String readAndCalculateExchangeValue(String amount, String date, String mezenne) throws Exception {
         BigDecimal amountCast = new BigDecimal(amount);
         File file = new File(System.getProperty("user.dir") + "/res/" + date + ".xml");
-        DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance()
-                .newDocumentBuilder();
-        Document doc = dBuilder.parse(file);
-        doc.getDocumentElement().normalize();
-        NodeList nodes = doc.getElementsByTagName("Valute");
+        SAXReader reader = new SAXReader();
+        Document document = reader.read(file);
+//        DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance()
+//                .newDocumentBuilder();
+//        Document doc = dBuilder.parse(file);
+//        doc.getDocumentElement().normalize();
+//        NodeList nodes = doc.getElementsByTagName("Valute");
+
+        List<org.dom4j.Node> nodes = document.selectNodes("/Valute" );
 
         boolean isFound = false;
+        BigDecimal result = null;
 
-        for (int i = 0; i < nodes.getLength(); i++) {
-            Node tempNode = nodes.item(i);
+        for (int i = 0; i < nodes.size(); i++) {
+            Node tempNode = (Node) nodes.get(i);
             if (tempNode.getNodeType() == Node.ELEMENT_NODE) {
                 Element eElement = (Element) tempNode;
                 if (mezenne.equals(eElement.getAttribute("Code"))) {
                     BigDecimal currency = new BigDecimal(eElement.getElementsByTagName("Value").item(0).getTextContent());
-                    BigDecimal result = amountCast.divide(currency, 3, RoundingMode.HALF_UP);
+                    result = amountCast.divide(currency, 3, RoundingMode.HALF_UP);
                     System.out.println(result.toString());
                     isFound = true;
                 }
             }
         }
         if (!isFound) {
-            System.out.println("Sehv mezenne daxil etdiniz!");
+            return "Sehv mezenne daxil etdiniz!";
         }
-        return isFound;
+        return result.toString();
     }
 
     @Override

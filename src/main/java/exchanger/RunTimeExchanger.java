@@ -21,16 +21,16 @@ import java.util.Scanner;
 
 public class RunTimeExchanger extends ExchangerAbstract {
 
-    HashMap<String, HashMap<String, Cbar_content>> currencyContent = new HashMap<>();
+   static HashMap<String, HashMap<String, Cbar_content>> currencyContent = new HashMap<>();
 
     @Override
-    boolean readAndCalculateExchangeValue(String amount, String date, String mezenne) {
+    String readAndCalculateExchangeValue(String amount, String date, String mezenne) {
         BigDecimal amountCast = new BigDecimal(amount);
         String m=currencyContent.get(date).get(mezenne).getValue();
         BigDecimal currency = new BigDecimal(m);
         BigDecimal result = amountCast.divide(currency, 3, RoundingMode.HALF_UP);
         System.out.println(result.toString());
-        return true;
+        return result.toString();
     }
 
     @Override

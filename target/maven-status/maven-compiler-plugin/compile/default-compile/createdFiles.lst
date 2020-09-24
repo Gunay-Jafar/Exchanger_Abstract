@@ -1,10 +1,9 @@
 util\GeneralUtils.class
+service\CurrencyService.class
 entity\Cbar_content.class
 exchanger\ExchangerAbstract.class
 exchanger\DBExchanger.class
-controller\CurrencyController.class
 exchanger\RunTimeExchanger.class
-service\CurrentService.class
 config\ApplicationConfig.class
 Main.class
 util\HibernateUtil.class

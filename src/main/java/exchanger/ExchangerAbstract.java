@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public abstract class ExchangerAbstract {
 
-    abstract boolean readAndCalculateExchangeValue(String amount, String date, String mezenne) throws Exception;
+    abstract String readAndCalculateExchangeValue(String amount, String date, String mezenne) throws Exception;
 
     abstract void getCurrencyDataWithDateAndSave(String date) throws Exception;
 
@@ -43,6 +43,14 @@ public abstract class ExchangerAbstract {
 
     abstract boolean enterExchangeInfo() throws Exception;
 
+    public String enterExchangeInfoForService(String date, String code, String amount) throws Exception {
+        boolean isDateValid = GeneralUtils.isDateValid(date);
+        if (!isDateValid)
+            return "Sehv tarix daxil etdiniz!";
+
+        return readAndCalculateExchangeValue(amount,date,code.toUpperCase());
+
+    }
     public void run() {
         Scanner scanner = new Scanner(System.in);
         try {

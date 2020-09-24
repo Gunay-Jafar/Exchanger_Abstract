@@ -29,21 +29,21 @@ public class DBExchanger extends ExchangerAbstract {
     }
 
     @Override
-    boolean readAndCalculateExchangeValue(String amount, String date, String mezenne) {
+    String readAndCalculateExchangeValue(String amount, String date, String mezenne) {
         BigDecimal amountCast = new BigDecimal(amount);
         String hql = "select cc.value from Cbar_content cc where cc.cbar_date.date=:date and cc.code=:code";
         Object result = ses.createQuery(hql)
                 .setParameter("date", LocalDate.parse(date, DateTimeFormatter.ofPattern("dd.MM.yyyy")))
                 .setParameter("code", mezenne)
                 .getSingleResult();
-        if (String.valueOf(result).isEmpty() || String.valueOf(result) == null)
-            return false;
+//        if (String.valueOf(result).isEmpty() || String.valueOf(result) == null)
+//            return false;
 
         BigDecimal currency = new BigDecimal(String.valueOf(result));
         BigDecimal resultNum = amountCast.divide(currency, 3, RoundingMode.HALF_UP);
-        System.out.println(resultNum.toString());
+  //      System.out.println(resultNum.toString());
 
-        return true;
+        return resultNum.toString();
     }
 
 
